@@ -20,6 +20,9 @@ def fill():
         else:
             days[n + week_day]['bg'] = 'gray'
 
+    for n in range(week_day):
+        days[week_day - n - 1]['text'] = back_month_days - n
+
 root = Tk()
 root.title("Календарь")
 days = []
